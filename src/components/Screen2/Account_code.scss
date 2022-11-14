@@ -1,3 +1,5 @@
+@import '../../mixins';
+@import '../../variable';
 .account-code{
      display: flex;
      justify-content: space-around;
@@ -45,22 +47,20 @@
      .referal{
           
           h3{
-               color: #800080;
+               color: $color;
                font-weight: bold;
                font-size: 1.5rem;
           }
           
           .referal-code{
+               @include flexprob(row,center);
                width: 22.37rem;
                height: 3.75rem;
-               display: flex;
-               justify-content: center;
                font-size: 1.25rem;
                font-weight: bold;
-               color: #800080;
-               align-items: center;
+               color: $color;
                border: 1px solid transparent;
-               border-image: linear-gradient(to left, #800080, #FF864C);
+               border-image: linear-gradient(to left, $color, #FF864C);
                border-image-slice: 1;
 
                p{
@@ -86,6 +86,7 @@
      .account-code{
           .referal{
                .referal-code{
+                    width: 18rem;
                     letter-spacing: 1.5rem;
                }
           }

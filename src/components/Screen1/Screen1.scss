@@ -1,3 +1,4 @@
+@import '../../variable';
 .friend_refer_wrapper{
      display: flex;
      flex-direction: column;
@@ -5,7 +6,7 @@
      gap: 2rem;
 
      .terms_condition{
-          color: #800080;
+          color: $color;
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 500;

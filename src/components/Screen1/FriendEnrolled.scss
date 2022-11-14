@@ -1,3 +1,5 @@
+@import "../../mixins";
+@import "../../variable";
 .friend-enrolled-wrapper{
      display: flex;
      flex-direction: column;
@@ -6,7 +8,7 @@
      h3{
           font-weight: 600;
           font-size: 20px;
-          color:#800080;
+          color:$color;
 
           span{
                color: #626262;
@@ -14,9 +16,9 @@
      }
 
      .card_wrapper{
+          gap: 1rem;
           display: flex;
           flex-wrap: wrap;
-          gap: 1rem;
           justify-content: flex-start;
 
           .friend-enrolled-card{
@@ -25,7 +27,7 @@
                padding: 1.5rem 1rem;
                border-radius: 20px;
                color: #fff;
-               background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+               background: linear-gradient(270deg, $color 0%, #FF864C 100%);
                display: flex;
                flex-direction: column;
                gap: 0.8rem;
@@ -59,7 +61,8 @@
      }
 }
 
-@media screen and (max-width:786px) {
+
+@media screen and (max-width:1024px) {
      .friend-enrolled-wrapper{
           .card_wrapper{
                justify-content: center;

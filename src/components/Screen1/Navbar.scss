@@ -1,7 +1,7 @@
+@import '../../mixins';
+@import '../../variable';
 nav{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+     @include flexprob(row,space-between);
      padding: 0 3rem;
 
      .logo{
@@ -12,8 +12,7 @@ nav{
      }
 
      .nav-items-list{
-          display: flex;
-          align-items: center;
+          @include flexprob(row,'');
           gap: 1rem;
           font-family: 'Poppins', sans-serif;
           font-weight: bold;
@@ -23,11 +22,10 @@ nav{
           }
 
           .profileName{
+               @include flexprob(row,'');
                cursor: pointer;
-               display: flex;
-               align-items: center;
                gap: 0.5rem;
-               color: rgba(128, 0, 128, 1);
+               color: $color;
                
           }
      }
@@ -47,7 +45,7 @@ nav{
                width: 165px;
                border-radius: 10px;
                justify-content: center;
-               background: rgba(128, 0, 128, 1);
+               background: $color;
                color: #fff !important;
                display: flex;
 

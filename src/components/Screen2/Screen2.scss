@@ -1,3 +1,4 @@
+@import '../../variable';
 .refer_earn_wrapper{
      display: flex;
      flex-direction: column;
@@ -9,7 +10,7 @@
           flex-direction: column;
           gap: 1rem;
           p{
-               color: #800080;
+               color: $color;
                font-size: 1rem;
                font-weight: bold;
           }
