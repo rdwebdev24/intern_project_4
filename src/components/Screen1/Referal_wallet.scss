@@ -1,0 +1,48 @@
+.referalcode-wallet{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-family: Poppins;
+     
+     .referal{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: #800080;
+          gap: 0.3rem;
+
+          .referal-code{
+               width: 153px;
+               height: 50px;
+               border: 1.5px solid #DFDFDF;
+               border-radius: 10px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               letter-spacing: 0.5rem;
+               font-size: 1.2rem;
+               font-weight: bold;
+          }
+     }
+     
+     .wallet{
+          width: 145px;
+          height: 85px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          border-radius: 20px;
+          color: #800080;
+          box-shadow: 0px 2px 8px 0px rgba(128, 0, 128, 0.15);
+     }
+}
+
+@media screen and (max-width:786px) {
+     .wallet{
+          width: 153px !important;
+          height: 74px !important;
+     }
+}

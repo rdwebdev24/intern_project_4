@@ -1,0 +1,20 @@
+.friend_refer_wrapper{
+     display: flex;
+     flex-direction: column;
+     padding: 0 5rem 2rem 5rem;
+     gap: 2rem;
+
+     .terms_condition{
+          color: #800080;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+     }
+     
+}
+
+@media screen and (max-width:786px) {
+     .friend_refer_wrapper{
+          padding: 0 1.5rem;
+     }
+}

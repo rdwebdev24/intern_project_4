@@ -1,0 +1,93 @@
+.account-code{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     gap: 2rem;
+
+
+     .account_info_wrapper{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 30.3rem;
+          background: #FFFFFF;
+          box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
+          border-radius: 20px;
+          padding: 1.5rem 0;
+          gap: 2rem;
+          
+          .account-info{
+               padding: 0 1rem;
+               flex-wrap: wrap;
+               width: 100%;
+               display: flex;
+               justify-content: space-around;
+               
+               div{
+                    p:nth-child(1){
+                         color: #800080;
+                    }
+                    p:nth-child(2){
+                         font-size: 2rem;
+                         font-weight: bold;
+                    }
+               }
+          }
+          .withdraw{
+               border: none;
+               color: #fff;
+               padding: 0.5rem 1rem;
+               background: #800080;
+               border-radius: 20px;
+          }
+     }
+
+     .referal{
+          
+          h3{
+               color: #800080;
+               font-weight: bold;
+               font-size: 1.5rem;
+          }
+          
+          .referal-code{
+               width: 22.37rem;
+               height: 3.75rem;
+               display: flex;
+               justify-content: center;
+               font-size: 1.25rem;
+               font-weight: bold;
+               color: #800080;
+               align-items: center;
+               border: 1px solid transparent;
+               border-image: linear-gradient(to left, #800080, #FF864C);
+               border-image-slice: 1;
+
+               p{
+                    margin-left: 2rem;
+                    letter-spacing: 2rem;
+               }
+          }
+     }
+}
+
+
+@media screen and (max-width:500px) {
+     .account-code{
+          .account_info_wrapper{
+               .account-info{
+                    gap: 1.5rem;
+                    justify-content: space-between;
+               }
+          }
+     }
+}
+@media screen and (max-width:375px) {
+     .account-code{
+          .referal{
+               .referal-code{
+                    letter-spacing: 1.5rem;
+               }
+          }
+     }
+}
